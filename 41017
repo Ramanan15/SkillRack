@@ -1,0 +1,17 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+        Scanner in = new Scanner(System.in);
+        String str = in.nextLine();
+        char[] ch = str.toCharArray();
+        String st = "";
+        for(int i = 0; i < ch.length; i++) {
+            if(Character.isLetter(ch[i]) || (int)ch[i] == 32) {
+                st += ch[i];
+            }
+        }
+        System.out.println(st.trim());
+	}
+}

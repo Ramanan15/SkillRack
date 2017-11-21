@@ -1,0 +1,18 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+        Scanner in = new Scanner(System.in);
+        int h = in.nextInt();
+        int l = in.nextInt();
+        for(int i = h / 2; i <= h; i++) {
+            for(int j = 0; j <= h; j++) {
+                if(i + j == h && i * 2 + j * 4 == l) {
+                    System.out.println(i+" "+j);
+                    break;
+                }
+            }
+        }
+	}
+}
